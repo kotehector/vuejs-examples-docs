@@ -1,7 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <el-container>
+      <el-header>
+        <h1>VueJs Ejemplos Código Documentación</h1>
+      </el-header>
+      <el-container>
+        <el-aside width="200px">
+          Barra lateral
+          <img src="./assets/logo.png">
+        </el-aside>
+        <el-container>
+          <el-main>
+            Principal
+            <router-view/>
+          </el-main>
+        </el-container>
+      </el-container>
+      <el-footer>
+        Pie de página
+      </el-footer>
+    </el-container>
+    
   </div>
 </template>
 
