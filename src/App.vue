@@ -5,10 +5,9 @@
         <h1>VueJs Ejemplos Código Documentación</h1>
       </el-header>
       <el-container>
-        <el-aside width="200px">
-          Barra lateral
-          <img src="./assets/logo.png">
-        </el-aside>
+        
+        <app-menu></app-menu>
+        
         <el-container>
           <el-main>
             Principal
@@ -25,18 +24,35 @@
 </template>
 
 <script>
+import AppMenu from '@/components/AppMenu'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    AppMenu
+  }
 }
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.el-header,
+.el-footer {
+  background-color: #64b587;
+  color: #fff;
+}
+.el-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 </style>

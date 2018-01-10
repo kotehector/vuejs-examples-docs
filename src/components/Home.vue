@@ -1,16 +1,15 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>Links Esenciales</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
+      <li><a href="https://chat.vuejs.org" target="_blank">Chat de la Comunidad</a></li>
       <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
+      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs para este Template</a></li>
     </ul>
-    <h2>Ecosystem</h2>
+    <h2>Un increíble Ecosistema!</h2>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
@@ -22,7 +21,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
